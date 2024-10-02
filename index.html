@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="javascript.js"></script>
-    <style></style>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css"></style>
 </head>
 <body>
     <h1>Rock, Paper, Scissors!</h1>
-    <p>Click any button to play rock, paper, scissors!</p>
+    <p id="instructions">Click any button to play rock, paper, scissors!</p>
     <div class="button-container">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
     </div>
     <div class="stats">
-        <p>Rounds: 0</p>
-        <p>Computer Wins: 0</p>
-        <p>Player Wins: 0</p>
+        <p id="computer-stats">Computer Wins: 0</p>
+        <p id="player-stats">Player Wins: 0</p>
     </div>
     
 </body>
